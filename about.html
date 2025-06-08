@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alif's Verse | About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .hero-content {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .hero-content h2 span {
+      font-size: 36px;
+      font-weight: bold;
+      color: rgb(19, 18, 18);
+    }
+
+    .hero-content .header {
+      font-size: 22px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .about-card {
+      width: 100%;
+      margin: 30px 0;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      font-size: 24px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: stretch;
+      gap: 30px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .about-icon {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #dbe9ff;
+    }
+
+    .about-icon img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .about-content p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+    }
+
+    .about-image img {
+      width: 200px;
+      height: 400px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .thank-you-card {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thank-you-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .thank-you-card p {
+      text-align: justify;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 30px; /* Updated for better side spacing */
+        gap: 20px;
+      }
+
+      .about-content p {
+        text-align: justy;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      .thank-you-card {
+        font-size: 20px;
+        padding: 25px 30px; /* Updated for better side spacing */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h1>About Section</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">
+      <img src="Picture/icon.png" alt="Alif's Profile Icon">
+    </div>
+    <div class="about-content">
+      <h3>About Me</h3>
+      <p>
+        Hello, I am <b>Abdullah Al Khalid Alif</b> — someone who believes that creativity and code can work hand-in-hand to build experiences that matter.
+        I'm currently pursuing my Bachelor's degree in Computer Science and Engineering. But beyond academic grades and assignments, I’m passionate about turning static ideas into interactive digital realities.
+        As a front-end developer, I find joy in solving problems with design, code, and logic.
+        <br>
+        I am also passionate about learning new technologies, building creative digital solutions, and solving real-world problems through code.
+        Currently exploring web development, structured programming, data structures, and algorithms.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="Picture/my-photo.jpg" alt="Abdullah Al Khalid Alif">
+    </div>
+  </div>
+
+  <section>
+    <div class="thank-you-card">
+      <p>
+        What started as a simple fascination with websites slowly evolved into a full-blown passion for clean layouts,
+        intuitive navigation, and responsive design. I work primarily with HTML, CSS, JavaScript,
+        and a growing curiosity for modern tools like Tailwind and React. Every new challenge is a chance for me to learn, 
+        explore, and create something better than before.
+        I believe websites are not just digital pages — they’re living experiences. That’s why I always focus on how things feel,
+        not just how they look. Whether I’m working on a personal portfolio, a small brand, or a class project, I design with
+        purpose and code with care.
+      </p>
+    </div>
+  </section>
+
+  <br>
+
+  <section>
+    <div class="thank-you-card">
+      <p>
+        Collaboration is another value I hold close. I love working with teams, exchanging feedback, 
+        and watching an idea evolve through shared effort. I’m also a fan of version control, documentation, 
+        and making things easy to maintain — because great work isn’t just what you build, but how responsibly you build it.
+        Outside of coding, I explore design inspirations, watch tech talks, and mentor juniors when I can. I truly believe in 
+        learning by sharing. And no matter how much I know, there’s always more to discover.
+        In the coming years, I aim to grow into a well-rounded full-stack developer and contribute to projects 
+        that leave a positive mark — whether it’s through better UI/UX, meaningful automation, or open-source contributions.
+        This portfolio is more than a collection of projects — it’s a snapshot of who I am, what I 
+        love doing, and where I want to go.
+      </p>
+    </div>
+  </section>
+
+  <br>
+
+  <section>
+    <div class="thank-you-card">
+      <p>
+        Thanks for visiting my portfolio. I truly appreciate your time.
+        Feel free to explore my projects and skills to learn more about my work and passion.
+        If you have any questions or would like to connect, please don't hesitate to reach out through the contact page.
+        I'm always excited to collaborate and create something amazing together!
+      </p>
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <footer class="footer">
+    <p>&copy; 2025 Alif | All rights reserved.</p>
+  </footer>
+
+  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.classList.toggle('active');
+    }
+
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

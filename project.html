@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alif's Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <style>
+        .project{
+            text-align: center;
+            margin-top: 10px;
+            border: 1px  none;
+    width: fit;
+    font-size: 70px;
+    font-weight: bold;
+    color:cadetblue;
+
+    .none {
+        color: white;
+    }
+
+   
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1> Project</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="dropdownMenu">
+          <li><a href="index.html">Home</a> </li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+              <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <h2 class="none"><span>ALIF VERSE</span></h2>
+        <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+    </div>
+
+
+    <div class="project">
+        Comming Soon
+    </div>
+   
+
+
+      <div class="footer">
+        <footer>
+        <p>&copy; 2025 Alif | All rights reserved.</p>
+    </footer>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

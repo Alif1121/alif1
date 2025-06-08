@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif's Portfolio - Skills</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+ <style>
+ .Alif {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  margin: 30px 0;
+}
+
+.skill {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px 30px;
+  transition: transform 0.3s ease;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon,
+.skill-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 60px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.skill-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.skill .text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.skill-level {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 6px;
+  height: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.progress.advanced {
+  background-color: #4caf50;
+}
+.progress.middle {
+  background-color: #2196f3;
+}
+.progress.beginner {
+  background-color: #f44336;
+}
+
+.skill-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  align-self: center;
+}
+
+/* Responsive Styles (Mobile Friendly) */
+@media (max-width: 768px) {
+  .skill {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  .skill-icon,
+  .skill-photo {
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+
+  .skill-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .skill-image {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Skill</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+<!--hero-->
+  <div class="hero-content">
+    <h2><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+  <section id="Skills" class="skills-section">
+    <h2 class="Alif">My Skill</h2>
+
+    <!-- HTML -->
+    <div class="skill">
+      <i class="fab fa-html5 skill-icon" style="color: #e44d26;"></i>
+      <div class="skill-content">
+        <span class="skill-name">HTML</span>
+        <div class="text">
+          <p>HTML (Hyper Text Markup Language) is the standard language for creating webpages.
+             It defines the structure of web content using elements like text, images, links, and tables.
+             <br> With knowledge in HTML5, I focus on creating accessible, well-organized web pages that form
+              the backbone of modern web design.</p>
+        </div>
+        <span class="skill-level">Exploring</span>
+        <div class="progress-bar">
+          <div class="progress advanced" style="width: 80%;"></div>
+        </div>
+      </div>
+      <img src="Picture/html-structure.jpg" alt="HTML Logo" class="skill-image" />
+    </div>
+
+    <!-- CSS -->
+    <div class="skill">
+      <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+      <div class="skill-content">
+        <span class="skill-name">CSS</span>
+        <div class="text">
+          <p>CSS (Cascading Style Sheets) is the language that adds style, color and layout to HTML structures.
+             It turns plain content into beautiful, responsive design.
+             <br> I use CSS to transform raw HTML into visually engaging interfaces using Flexbox, Grid, and animations.</p>
+        </div>
+        <span class="skill-level">Learning</span>
+        <div class="progress-bar">
+          <div class="progress beginner" style="width: 35%;"></div>
+        </div>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" class="skill-image" />
+    </div>
+
+    <!-- C Language -->
+    <div class="skill">
+      <i class="devicon-c-plain skill-icon" style="color: #00599C;"></i>
+      <div class="skill-content">
+        <span class="skill-name">C Language</span>
+        <div class="text">
+          <p>C is a powerful, low-level programming language that builds the foundation for understanding 
+            computer architecture and system-level programming. <br>I use C to write efficient, memory-conscious
+             programs and understand how software interacts closely with hardware.</p>
+        </div>
+        <span class="skill-level">Progressing</span>
+        <div class="progress-bar">
+          <div class="progress middle" style="width: 60%;"></div>
+        </div>
+      </div>
+      <img src="Picture/hello.jpg" alt="C Language Logo" class="skill-image" />
+    </div>
+
+    <!-- GitHub -->
+    <div class="skill">
+      <img src="Picture/github.png" class="skill-icon" alt="GitHub Icon" />
+      <div class="skill-content">
+        <span class="skill-name">GitHub</span>
+        <div class="text">
+          <p>GitHub is a web-based platform where programmers can store, share, and collaborate
+            on their code. It is based on a version control system.
+            <br> I am new to GitHub. Currently, I have one repository and this portfolio is my second repository.
+            I plan to do more in the future as I continue learning and building.</p>
+        </div>
+        <span class="skill-level">Learning</span>
+        <div class="progress-bar">
+          <div class="progress beginner" style="width: 25%;"></div>
+        </div>
+      </div>
+      <img src="Picture/gitHome.jpg" alt="Github home page" class="skill-image" />
+    </div>
+
+    <!-- Canva -->
+    <div class="skill">
+      <img src="Picture/canva.jpg" alt="Canva Logo" class="skill-icon" />
+      <div class="skill-content">
+        <span class="skill-name">Canva</span>
+        <div class="text">
+          <p>Canva is an online graphic design platform used to create posters, presentations, logos, social media posts, and more. 
+          <br> I use Canva to create simple designs for various purposes using its templates and user-friendly interface.</p>
+        </div>
+        <span class="skill-level">Progressing</span>
+        <div class="progress-bar">
+          <div class="progress middle" style="width: 60%;"></div>
+        </div>
+      </div>
+      <img src="Picture/canva-can.jpg" alt="Canva templates" class="skill-image" />
+    </div>
+
+  </section>
+<br>
+  <footer class="footer">
+    <p>&copy; 2025 Alif | All rights reserved.</p>
+  </footer>
+
+  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">
+    &#8679;
+  </button> 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.classList.toggle('active');
+    }
+
+
+      window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top smoothly when the button is clicked
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif's Portfolio</title>
+
+  <!-- External CSS & Icons -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .hero-content {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #1c1c1c;
+    }
+
+    .hero-content h2 span {
+      font-size: 36px;
+      font-weight: bold;
+      color: black;
+
+    }
+
+    .hero-content .header {
+      font-size: 22px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .contact-card {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .contact-line i {
+      font-size: 22px;
+    }
+
+    .contact-link a {
+      color: #1c1c1c;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    .contact-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      background-color: #222;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-line {
+        font-size: 16px;
+        gap: 10px;
+      }
+
+      .contact-line i {
+        font-size: 20px;
+      }
+
+      .contact-link a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+    <h1>Contact</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+  <section class="contact-card">
+    <div class="contact-line">
+      <i class="fas fa-envelope" style="color: #D44638;"></i>
+      <span>Email me:</span>
+      <div class="contact-link">
+        <a href="mailto:alifbrur16@gmail.com" target="_blank">alifbrur16@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-line">
+      <i class="fab fa-facebook" style="color: #3b5998;"></i>
+      <span>Facebook:</span>
+      <div class="contact-link">
+        <a href="https://facebook.com/withALIF" target="_blank" rel="noopener noreferrer">Abdullah Al Khalid Alif</a>
+      </div>
+    </div>
+
+    <div class="contact-line">
+  <i class="fab fa-instagram" style="color: #E4405F;"></i>
+  <span>Instagram:</span>
+  <div class="contact-link">
+    <a href="https://instagram.com/withalif_2025" target="_blank" rel="noopener noreferrer">@withalif_2025</a>
+  </div>
+</div>
+
+<div class="contact-line">
+  <i class="fab fa-github" style="color: #333;"></i>
+  <span>GitHub:</span>
+  <div class="contact-link">
+    <a href="https://github.com/Alif1121" target="_blank">Alif1121</a>
+  </div>
+</div>
+
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Alif | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

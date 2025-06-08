@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.hero-content {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.hero-content h2 span {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(14, 14, 14);
+}
+
+.hero-content .header {
+  font-size: 22px;
+  color: white;
+  margin-top: 10px;
+}
+
+    .hero-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    
+    h1.fade-in {
+      opacity: 0;
+      animation: fadeIn 3s ease forwards;
+      font-size: 36px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h2.slide-up {
+      transform: translateY(50px);
+      opacity: 0;
+      animation: slideUp 2s ease 0.5s forwards;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    #typing {
+      font-size: 28px;
+      color: #444;
+      font-weight: bold;
+      text-align: center;
+      height: 40px;
+      margin-top: 20px;
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    .thank-you-card {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thank-you-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    
+    /* -------- Responsive Styling -------- */
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 15px;
+      }
+
+      .hero-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1.fade-in {
+        font-size: 28px;
+      }
+
+      h2.slide-up {
+        font-size: 24px;
+      }
+
+      #typing {
+        font-size: 22px;
+      }
+
+      .thank-you-card {
+        padding: 25px 20px;
+        font-size: 18px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+        <h1>Home</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <ul class="nav-links" id="dropdownMenu">
+          <li><a href="index.html">Home</a> </li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+              <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+  <header class="hero-content">
+    <img src="Picture/alif.jpg" alt="Alif's Photo" class="hero-img">
+    <h2><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </header>
+
+  <h1 class="fade-in">WELCOME TO MY PORTFOLIO</h1>
+  <div id="typing"></div>
+  <h2 class="slide-up">I am a Web Developer in Bangladesh</h2>
+
+  <section>
+    <div class="thank-you-card" style="background-color: antiquewhite;">
+      <p>
+        Welcome to my digital space! I'm a passionate front-end developer and an enthusiastic learner
+        currently pursuing my degree in Computer Science and Engineering.
+        <br><br>
+        With a strong foundation in <b>HTML, CSS, C language, and responsive design</b>, I specialize in crafting
+        modern, clean, and user-centric web interfaces that not only look great but also perform seamlessly
+        across devices.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="thank-you-card" style="background-color: burlywood;">
+      <p>
+        My journey in the world of web development began with curiosity and evolved into a deep passion for
+        turning ideas into visually stunning and interactive experiences. From static landing pages to dynamic
+        single-page applications, I enjoy every part of the process - planning, designing, coding, and optimizing.
+        <br><br>
+        I believe in writing clean, maintainable code and continuously improving through learning.
+        I'm always exploring new tools and technologies such as Tailwind CSS, React.js, Git, and web animations
+        to stay aligned with the ever-evolving tech landscape.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="thank-you-card" style="background-color: aqua;">
+      <p>
+        My approach is simple: listen carefully, design thoughtfully, and code responsibly.
+        I consider every project as a learning opportunity and a chance to grow both technically and creatively.
+        I also value feedback and love collaborating with other developers, designers, and clients to bring projects to life.
+        <br><br>
+        Thank you for visiting my portfolio. Feel free to explore my work, learn more about me in the About section,
+        or get in touch through the Contact page. Let’s connect and create something impactful together.
+      </p>
+    </div>
+  </section>
+
+ 
+
+  <footer class="footer">
+    <p>&copy; 2025 Alif | All rights reserved.</p>
+  </footer>
+
+   <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">
+    &#8679;
+  </button>
+<script>
+  // Toggle menu visibility
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.classList.toggle('active');
+  }
+
+  // Typing animation text
+  const text = "ABDULLAH AL KHALID ALIF";
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 70);
+    }
+  }
+
+  // Start typing animation after 2.5 seconds
+  setTimeout(typeWriter, 2500);
+
+  // Show/hide scroll-to-top button on scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when button is clicked
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
