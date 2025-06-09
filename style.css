@@ -278,3 +278,32 @@ body.dark-mode .mode-toggle {
 body {
   transition: background-color 0.4s, color 0.4s;
 }
+
+
+/* Ensure dark text turns light inside all cards and sections */
+body.dark-mode .thank-you-card,
+body.dark-mode section,
+body.dark-mode .hero-content {
+  color: #f4f4f4 !important;
+}
+
+/* Optional: Specific link or highlight color adjustments */
+body.dark-mode a {
+  color: #80cbc4; /* light teal */
+}
+
+body.dark-mode strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* For any paragraph inside dark-mode */
+body.dark-mode p {
+  color: #e0e0e0;
+}
+
+/* Button color fix in dark */
+body.dark-mode .mode-toggle {
+  background-color: #f4f4f4;
+  color: #111;
+}
