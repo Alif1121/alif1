@@ -231,7 +231,6 @@ a.about-glow:hover::after {
 
 
 /*-----night version ----*/
-
 body.light-mode {
   background-color: #f4f4f4;
   color: #111;
@@ -244,50 +243,56 @@ body.dark-mode {
 
 .mode-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 15px;
+  bottom: 20px;     /* নিচে */
+  left: 20px;       /* বামে */
+  width: 45px;
+  height: 45px;
   border: none;
-  border-radius: 25px;
+  border-radius: 50%;
   background-color: #333;
   color: #fff;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
-/* Adjust thank-you cards for dark mode */
+/* Dark Mode এর জন্য toggle এর কালার পরিবর্তন */
+body.dark-mode .mode-toggle {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+/* thank-you card এর dark style */
 body.dark-mode .thank-you-card {
   background-color: #1f1f1f !important;
   color: #ddd;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
 }
 
-/* Adjust header background */
+/* header background dark mode */
 body.dark-mode .hero-content {
   background-color: #1a1a1a;
 }
 
-body.dark-mode .mode-toggle {
-  background-color: #eee;
-  color: #111;
-}
-
-/* Smooth transition */
+/* smooth transition */
 body {
   transition: background-color 0.4s, color 0.4s;
 }
 
-
-/* Ensure dark text turns light inside all cards and sections */
+/* dark mode text & section fix */
 body.dark-mode .thank-you-card,
 body.dark-mode section,
 body.dark-mode .hero-content {
   color: #f4f4f4 !important;
 }
 
-/* Optional: Specific link or highlight color adjustments */
+/* link ও highlight dark mode */
 body.dark-mode a {
   color: #80cbc4; /* light teal */
 }
@@ -297,13 +302,7 @@ body.dark-mode strong {
   font-weight: bold;
 }
 
-/* For any paragraph inside dark-mode */
+/* paragraph dark mode */
 body.dark-mode p {
   color: #e0e0e0;
-}
-
-/* Button color fix in dark */
-body.dark-mode .mode-toggle {
-  background-color: #f4f4f4;
-  color: #111;
 }
