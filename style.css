@@ -228,3 +228,53 @@ a.about-glow:hover::after {
     background-color: #0d6efd;
 }
  
+
+
+/*-----night version ----*/
+
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .thank-you-card {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+}
+
+body.dark-mode .hero-content {
+  background-color: #1c1c1c;
+}
+
+body.dark-mode .thank-you-card:hover {
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+body.light-mode .mode-toggle {
+  background-color: #222;
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #ddd;
+  color: #111;
+}
