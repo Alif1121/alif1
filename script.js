@@ -1,4 +1,4 @@
-<script>
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("modeToggle");
   const body = document.body;
@@ -17,4 +17,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-</script>
