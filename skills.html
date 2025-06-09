@@ -167,6 +167,7 @@
     <h2><span>ALIF VERSE</span></h2>
     <p class="header">Creative Developer | Web Explorer | C Programmer</p>
   </div>
+<button id="modeToggle" class="mode-toggle">🌙 Dark Mode</button>
 
   <section id="Skills" class="skills-section">
     <h2 class="Alif">My Skill</h2>
@@ -291,6 +292,25 @@
   function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+/*----- mood---*/
+const toggleButton = document.getElementById("modeToggle");
+  const body = document.body;
+
+  // Set default mode
+  body.classList.add("light-mode");
+
+  toggleButton.addEventListener("click", () => {
+    if (body.classList.contains("light-mode")) {
+      body.classList.remove("light-mode");
+      body.classList.add("dark-mode");
+      toggleButton.textContent = "☀️ Light Mode";
+    } else {
+      body.classList.remove("dark-mode");
+      body.classList.add("light-mode");
+      toggleButton.textContent = "🌙 Dark Mode";
+    }
+  });
   </script>
 
 </body>
