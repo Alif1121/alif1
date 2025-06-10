@@ -1,3 +1,12 @@
+/*----- to gle menu -----*/
+
+function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('active');
+        }
+
+/*---- dark mood -------*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector(".mode-toggle");
   const body = document.body;
