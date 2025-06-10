@@ -205,29 +205,46 @@ a.about-glow:hover::after {
 
 /*-------scroll To Btn ----- */
 
-#scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 24px;
-    border: none;
-    outline: none;
-    background-color: #0a58ca;
-    color: white;
-    cursor: pointer;
-    padding: 12px 16px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px;
-    transition: background-color 0.3s ease;
-
+/* Root theme colors */
+:root {
+  --btn-bg-light: rgba(255, 255, 255, 0.6);
+  --btn-bg-dark: rgba(0, 0, 0, 0.4);
+  --btn-color-light: #000;
+  --btn-color-dark: #fff;
+  --btn-shadow-light: rgba(0, 0, 0, 0.2);
+  --btn-shadow-dark: rgba(255, 255, 255, 0.2);
 }
 
-#scorllTopBtn:hover {
-    background-color: #0d6efd;
+/* Scroll To Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  display: none;
 }
- 
+
+body.light-mode #scrollToTopBtn {
+  background: var(--btn-bg-light);
+  color: var(--btn-color-light);
+  box-shadow: 0 8px 20px var(--btn-shadow-light);
+}
+
+body.dark-mode #scrollToTopBtn {
+  background: var(--btn-bg-dark);
+  color: var(--btn-color-dark);
+  box-shadow: 0 8px 20px var(--btn-shadow-dark);
+}
+
+#scrollToTopBtn:hover {
+  transform: scale(1.1);
+}
 
 
 /*-----night version ----*/
