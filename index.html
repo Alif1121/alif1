@@ -16,25 +16,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* White background */
+    color: #111; /* Black text by default */
   }
 
   .hero-content {
     padding: 50px 20px;
     text-align: center;
-    background-color: #fff;
-    color: #000; /* Ensure text inside is black */
+    background-color: #ffffff;
+    color: #000;
   }
 
   .hero-content h2 span {
     font-size: 36px;
     font-weight: bold;
-    color: rgb(14, 14, 14);
+    color: #0e0e0e;
   }
 
   .hero-content .header {
     font-size: 22px;
     margin-top: 10px;
+    color: #222;
   }
 
   .hero-img {
@@ -51,6 +53,7 @@
     font-size: 36px;
     margin-top: 10px;
     text-align: center;
+    color: #111;
   }
 
   @keyframes fadeIn {
@@ -66,6 +69,7 @@
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
+    color: #111;
   }
 
   @keyframes slideUp {
@@ -86,6 +90,8 @@
 
   section {
     margin: 30px 0;
+    background-color: #fff;
+    color: #111;
   }
 
   .thank-you-card {
@@ -123,10 +129,21 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.05); /* Subtle gray dots */
     animation: animate 25s linear infinite;
     bottom: -150px;
     border-radius: 50%;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+    }
   }
 
   /* -------- Responsive Styling -------- */
