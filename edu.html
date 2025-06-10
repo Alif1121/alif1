@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alif Verse</title>
 <link rel="stylesheet" href="style.css"/>
-<style>
 :root {
   --gap: 20px;
   --color: #3498db;
   --bg-light: #f4f4f4;
   --bg-dark: #121212;
-  --text-light: #000000;
-  --text-dark: #f4f4f4;
+  --text-light: #000000; /* সবসময় কালো লেখা */
   --card-light: #ffffff;
   --card-dark: #1e1e1e;
   --hover-light: #f9f9f9;
@@ -20,7 +18,6 @@
   --icon-bg-dark: #2c2c2c;
 }
 
-/* Light Theme Default */
 body {
   font-family: Arial, sans-serif;
   background: var(--bg-light);
@@ -37,12 +34,14 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
 }
 
 .edu-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
+  color: var(--text-light);
 }
 
 .edu-box {
@@ -59,6 +58,7 @@ body {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease;
+  color: var(--text-light);
 }
 
 .edu-box.visible {
@@ -94,10 +94,12 @@ body {
 
 .info h3 {
   font-size: 1.2rem;
+  color: var(--text-light);
   margin: 0;
 }
 
 .info p {
+  color: var(--text-light);
   margin: 3px 0;
 }
 
@@ -134,40 +136,30 @@ body {
   }
 }
 
-/* Dark Theme Class */
+/* DARK MODE (ব্যাকগ্রাউন্ড পরিবর্তন, লেখা কালোই থাকবে) */
 body.dark {
   background: var(--bg-dark);
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 body.dark .edu-section {
   background: var(--card-dark);
 }
 
-body.dark .edu-title {
-  color: var(--text-dark);
-}
-
-body.dark .edu-box {
-  /* বক্স কালার অপরিবর্তিত রাখা হয়েছে */
-  color: var(--text-dark);
+body.dark .edu-title,
+body.dark .edu-box,
+body.dark .info h3,
+body.dark .info p {
+  color: var(--text-light); /* সবসময় কালো লেখা */
 }
 
 body.dark .edu-box:hover {
   background: linear-gradient(120deg, var(--color), var(--hover-dark));
 }
 
-body.dark .info h3,
-body.dark .info p {
-  color: var(--text-dark);
-}
-
 body.dark .icon img {
   background-color: var(--icon-bg-dark);
 }
-</style>
-
-
 </head>
 <body>
   <nav class="navbar">
