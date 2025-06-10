@@ -1,27 +1,200 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Alif's Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif Verse</title>
+  <link rel="stylesheet" href="style.css"/>
 
-    <style> 
-        .voucher{
-            text-align: center;
-            margin-top: 10px;
-            border: 1px  none;
-    width: fit;
-    font-size: 70px;
-    font-weight: bold;
-    color:cadetblue;
+  <style>
 
-        }
- 
-    </style>
-    </head>
-    <body>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #f0f8ff, #e6f2ff, #ffffff, #d0e7ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #333;
+}
 
-       <p class="voucher">Coming Soon</p> 
-    </body>
-    </html>
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#project-summary {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#tech-stack {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#user-benefits {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3 {
+  color: #0077b6;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+    .voucher {
+      text-align: center;
+      margin-top: 10px;
+      border: 1px none;
+      width: fit-content;
+      font-size: 70px;
+      font-weight: bold;
+      color: cadetblue;
+    }
+
+    .top {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .tip {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .hero-content {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+.one{
+  text-align: justify;
+  font-size: 16ppx
+  color: black;
+}
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Project</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skill</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2 class="none"><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+  <div>
+    <p class="top">Project No: 01</p>
+    <p class="tip">VOUCHER</p>
+  </div>
+
+<section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
+  <h2>🔍 <strong>Project Summary</strong></h2>
+  <p>
+    This web application is a simple and effective voucher generation tool, designed primarily for small businesses or shops.
+    Through it, users can create a voucher by inputting the product name, quantity, and unit price. The system automatically
+    calculates the total price, dues, and cash payment amounts.
+  </p>
+
+  <div style="text-align: center; margin: 2rem 0;">
+    <img src="voucher02.jpg" alt="Voucher Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+  </div>
+
+  <h3>🛠️ <strong>Key Features</strong></h3>
+
+  <p><strong>✓ Product Adder:</strong> Multiple products can be listed using the "Add More Product" button.</p>
+  <p><strong>✓ Automatic Calculation:</strong> The total price for each product and the amount due and cash payment for the total voucher are automatically calculated.</p>
+  <p><strong>✓ Voucher Print:</strong> The created voucher can be printed using the "Print" button.</p>
+  <p><strong>✓ User Interface:</strong> Simple and user-friendly interface, which helps in creating vouchers quickly and efficiently.</p>
+</section>
+  </p>
+
+<section id="tech-stack" style="padding: 2rem; background-color: #f4f4f4;">
+  <h2>💻 <strong>Technology Stack</strong></h2>
+  <p>
+    The project is primarily built using <strong>HTML, CSS, and JavaScript</strong>. It is a static web application hosted on <strong>GitHub Pages</strong>.
+  </p>
+</section>
+
+<section id="user-benefits" style="padding: 2rem; background-color: #ffffff;">
+  <h2>✅ <strong>User Benefits</strong></h2>
+  <p><strong>✓ Ease of Use:</strong> Can be used directly without any registration or login.</p>
+  <p><strong>✓ Quickly Voucher Creation:</strong> Complete vouchers can be generated within just a few clicks.</p>
+  <p><strong>✓ Print Option:</strong> The generated voucher can be printed directly, which is helpful for daily business operations.</p>
+  
+ <br>
+ <br>
+ <p><strong>📎 Project Link </strong> :  <a href="https://alif1121.github.io/shop_project/">  Shop Voucher</a></p>
+</section>
+
+<section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="voucher01.jpg" alt="Voucher Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+    <p style="text-align=center;">Voucher Demo</p>
+  </div>
+  </section>
+  
+  
+  
+  
+  
+  <section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
+  <h2 style="text-align: center;">🔍 <strong>Project Summary</strong></h2>
+  <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+    This project is a simple, fast, and user-friendly <strong>Voucher Generator Web App</strong> built for small businesses and shopkeepers. 
+    It allows users to easily create vouchers by inputting product details like name, quantity, and unit price. 
+    The system automatically calculates the total price, dues, and paid amount, saving time and reducing manual errors. 
+    Users can add multiple products dynamically, view totals in real-time, and print the voucher instantly with a single click.
+    <br><br>
+    Built using <strong>HTML, CSS, and JavaScript</strong>, the app runs smoothly on both desktop and mobile devices without requiring registration or login. 
+    Hosted on <strong>GitHub Pages</strong>, it showcases practical use of JavaScript for real-time calculation, form handling, and DOM manipulation. 
+    It's an efficient solution for generating and printing vouchers in daily business operations.
+  </p>
+</section>
+
+
+
+</body>
+</html>
