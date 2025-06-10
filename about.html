@@ -255,28 +255,16 @@
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
 
-  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">
+  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6" />
+  </svg>
+</button>
+
 
 <script src="script.js"></script>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('dropdownMenu');
-      menu.classList.toggle('active');
-    }
-
-    window.onscroll = function () {
-      const btn = document.getElementById("scrollTopBtn");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    };
-
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
-</body>
+  
+body>
 </html>
