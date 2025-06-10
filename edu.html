@@ -5,69 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alif Verse</title>
 <link rel="stylesheet" href="style.css"/>
-
 <style>
+    :root {
+      --gap: 20px;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  background: var(--bg-light);
-  color: var(--text-light);
-  margin: 0;
-  padding: 6px;
-  transition: background 0.4s, color 0.4s;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 06px;
+    }
 
-.edu-section {
-  max-width: 900px;
-  margin: auto;
-  background: var(--card-light);
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  color: var(--text-light);
-}
+    .edu-section {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 05px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-.edu-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: var(--text-light);
-}
+    .edu-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
 
-.edu-box {
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap);
-  background: linear-gradient(120deg, var(--color), var(--card-light));
-  border-left: 6px solid var(--color);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease;
-  color: var(--text-light);
-}
+    .edu-box {
+      display: flex;
+      flex-direction: row;
+      gap: var(--gap);
+      background: linear-gradient(120deg, var(--color), #ffffff);
+      border-left: 6px solid var(--color);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
 
-.edu-box.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .edu-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-.edu-box:hover {
-  transform: translateY(-10px) scale(1.02);
-  background: linear-gradient(120deg, var(--color), var(--hover-light));
-}
+    .edu-box:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      background: linear-gradient(120deg, var(--color), #f9f9f9);
+    }
 
-.icon {
+ .icon {
   width: 60px;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 10px; 
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
 .icon img {
@@ -77,82 +75,57 @@ body {
   display: block;
   background-color: white;
 }
+    .info h3 {
+     
+      font-size: 1.2rem;
+    }
 
-.icon:hover {
-  transform: scale(1.1);
-}
+    .info p {
+      color: black;
+      margin: 3px 0;
+    }
 
-.info h3 {
-  font-size: 1.2rem;
-  color: var(--text-light);
-  margin: 0;
-}
+  
 
-.info p {
-  color: var(--text-light);
-  margin: 3px 0;
-}
+    /* Responsive */
+    @media (max-width: 768px) {
+      .edu-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .edu-box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .icon {
-    margin-bottom: 10px;
-  }
-}
-
+      .icon {
+        margin-bottom: 10px;
+      }
+    }
 @media (max-width: 480px) {
   .edu-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
-  }
-
-  .edu-title {
-    font-size: 1.5rem;
-  }
-
-  .info h3 {
-    font-size: 1rem;
   }
 
   .icon {
     margin-bottom: 10px;
   }
 }
+    @media (max-width: 480px) {
+      .edu-title {
+        font-size: 1.5rem;
+      }
 
-/* DARK MODE (ব্যাকগ্রাউন্ড পরিবর্তন, লেখা কালোই থাকবে) */
-body.dark {
-  background: var(--bg-dark);
-  color: var(--text-light);
-}
+      .info h3 {
+        font-size: 1rem;
+      }
 
-body.dark .edu-section {
-  background: var(--card-dark);
-}
-
-body.dark .edu-title,
-body.dark .edu-box,
-body.dark .info h3,
-body.dark .info p {
-  color: var(--text-light); /* সবসময় কালো লেখা */
-}
-
-body.dark .edu-box:hover {
-  background: linear-gradient(120deg, var(--color), var(--hover-dark));
-}
-
-body.dark .icon img {
-  background-color: var(--icon-bg-dark);
-}
-
-</style>
-</head>
+      .edu-box {
+        padding: 10px;
+      }
+    }
+    
+    
+    
+  </style></head>
 <body>
   <nav class="navbar">
     <h1>Education </h1>
@@ -172,10 +145,6 @@ body.dark .icon img {
     <h2><span>ALIF VERSE</span></h2>
     <p class="header">Creative Developer | Web Explorer | C Programmer</p>
   </div>
-
-<button class="mode-toggle" onclick="toggleDarkMode()">🌙</button>
-
-
   
   
 <section class="edu-section">
