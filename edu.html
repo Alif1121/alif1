@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif Verse</title>
+  <style>
+    :root {
+      --gap: 20px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 06px;
+    }
+
+    .edu-section {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 05px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .edu-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .edu-box {
+      display: flex;
+      flex-direction: row;
+      gap: var(--gap);
+      background: linear-gradient(120deg, var(--color), #ffffff);
+      border-left: 6px solid var(--color);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+
+    .edu-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .edu-box:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      background: linear-gradient(120deg, var(--color), #f9f9f9);
+    }
+
+ .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background-color: white;
+}
+    .info h3 {
+     
+      font-size: 1.2rem;
+    }
+
+    .info p {
+      color: black;
+      margin: 3px 0;
+    }
+
+  
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .edu-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .icon {
+        margin-bottom: 10px;
+      }
+    }
+@media (max-width: 480px) {
+  .edu-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+}
+    @media (max-width: 480px) {
+      .edu-title {
+        font-size: 1.5rem;
+      }
+
+      .info h3 {
+        font-size: 1rem;
+      }
+
+      .edu-box {
+        padding: 10px;
+      }
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>About Section</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="edu.hhtml">Education </a>
+      </li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="skills.html">Skill</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+<button class="mode-toggle" onclick="toggleDarkMode()">🌙</button>
+
+
+  
+  
+<section class="edu-section">
+  <h2 class="edu-title">🎓 My Education Journey</h2>
+
+  <div class="edu-box" style="--color:#c084fc;">
+    <div class="icon">
+  <img src="brur_optimized.png" alt="BRUR Logo">
+</div>
+    <div class="info">
+      <h2><strong>University</strong></h2>
+      <p> <strong>Begum Rokeya University,  Rangpur</strong>
+      <br>
+      <p style="text-align: justify;">
+      <b>Department</b>: Computer Science & Engineering Department
+      <br><br>
+     I started my undergraduate studies in November 2024, pursuing a Bachelor of Science (B.Sc.) degree in Computer Science and Engineering. I am currently enrolled at the university and working towards completing my B.Sc. in Engineering.
+
+     <br>
+    </p>
+     
+    </div>
+  </div>
+
+  <div class="edu-box" style="--color:#60a5fa;">
+    <div class="icon">
+  <img src="mc.jpeg" alt="Milestone College Logo">
+</div>
+    <div class="info">
+      <h2>HSC </h2>
+      <p><strong>Milestone College, Dhaka</strong> <br>  
+      <br>
+      
+      </p>
+      <p style="text-align: justify;">
+        <b>Background:</b> Science
+        <br>
+        <b>Class -</b> Eleven to Twelve <br>
+       <b>Passing Year </b>- 2023
+       <br>
+       <br>I completed my Higher Secondary Education from Milestone College, where I studied from 2021 to 2023. I successfully passed the Higher Secondary Certificate (HSC) examination in the year 2023.
+      </p>
+    </div>
+  </div>
+
+  <div class="edu-box" style="--color:#34d399;">
+    <div class="icon">
+  <img src="download.jpeg" alt="IRMS Logo">
+</div>
+    <div class="info">
+      <h2>SSC </h2>
+      <p><strong>Ideal Residential Model School</strong>  <br> Chiribandar, Dinajpur  
+      <br>
+      
+      </p><br>
+      <p style="text-align: justify;">
+        <b>Background:</b> Science
+        <br>
+        <b>Class </b>- Nine to Ten <br>
+       <b>Passing Year </b>- 2021
+       
+       <br>
+       <br>I completed my Secondary  Education 
+       from Ideal Residential Model School, where I studied from 2019 to 2021. I successfully passed the Secondthe School Certificate (SSC) examination in the year 2021.
+      </p>
+    </div>
+  </div>
+
+  <div class="edu-box" style="--color:#facc15;">
+    <div class="icon"><img src="mgms.jpg" alt="MGMS Logo"></div>
+    <div class="info">
+      <h2>Class Six to Eight</h2>
+      <p><strong>Maddhapara Granite Mine School</strong>  
+      <br>
+      Dinajpur 
+      <br><br>
+      </p>
+      <p style="text-align: justify;">
+        I studied at Maddhapara Granite Mine School from 2016 to 2018, completing my junior secondary level (Class 6 to 8) education during this period.
+        
+      </p>
+    </div>
+  </div>
+
+<div class="edu-box" style="--color: #2C3E50">
+    <div class="icon"><img src="classTwo.jpeg" alt="class two Logo"></div>
+    <div class="info">
+      <h2>Class Two to Five</h2>
+      <p><strong>Doly Model Pre Cadet School</strong>  
+      <br>
+      Dinajpur 
+      <br><br>
+      </p>
+      <p style="text-align: justify;">
+        From 2012 to 2015, I attended Doly Model Pre Cadet School, where I completed my primary education from Class 2 last half to Class 5.
+      </p>
+    </div>
+  </div>
+  
+  <div class="edu-box" style="--color: #2C3A12">
+    <div class="icon"><img src="down.png" alt="class nursey Logo"></div>
+    <div class="info">
+      <h2>Class - Nursery to One</h2>
+      <p><strong>Baura Islamia Kindergarten School</strong>  
+      <br>
+     Lalmonirhat 
+      <br><br>
+      </p>
+      <p style="text-align: justify;">
+         In 2012,
+ I attended Baura Islamia Kindergarten  School
+where I completed my pre primary
+ education from complete  Class two first half.
+      </p>
+    </div>
+  </div>
+  
+  
+  <div class="edu-box" style="--color: #2C3A12">
+    <div class="icon"><img src="nursery.jpeg" alt="class nursey Logo"></div>
+    <div class="info">
+      <h2>Class - Nursery to One</h2>
+      <p><strong>Ashim Uddin Standard Kindergarten School</strong>  
+      <br>
+     Lalmonirhat 
+      <br><br>
+      </p>
+      <p style="text-align: justify;">
+         From 2010 to 2011,
+ I attended Ashim Uddin Standard Kindergarten School
+where I completed my pre - primary
+ education from Class Nursery to Class One.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  document.querySelectorAll(".edu-box").forEach(item => {
+    observer.observe(item);
+  });
+  
+  /*----- to gle menu -----*/
+
+function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('active');
+        }
+  
+</script>
+ 
+</body>
+</html>
