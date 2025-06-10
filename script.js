@@ -1,6 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("modeToggle");
+  const toggleButton = document.querySelector(".mode-toggle");
   const body = document.body;
 
   body.classList.add("light-mode");
@@ -9,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (body.classList.contains("light-mode")) {
       body.classList.remove("light-mode");
       body.classList.add("dark-mode");
-      toggleButton.textContent = "☀️ Light Mode";
+      toggleButton.textContent = "☀️";
     } else {
       body.classList.remove("dark-mode");
       body.classList.add("light-mode");
-      toggleButton.textContent = "🌙 Dark Mode";
+      toggleButton.textContent = "🌙";
     }
   });
 });
