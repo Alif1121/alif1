@@ -1,9 +1,6 @@
 /*----- to gle menu -----*/
 
-function toggleMenu() {
-            const menu = document.getElementById('dropdownMenu');
-            menu.classList.toggle('active');
-        }
+
 
 /*---- dark mood -------*/
 
