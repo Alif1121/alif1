@@ -6,41 +6,50 @@
   <title>Alif Verse</title>
 <link rel="stylesheet" href="style.css"/>
   <style>
-
 :root {
   --gap: 20px;
-  --color: #3498db; /* default theme color */
+  --color: #3498db;
+  --bg-light: #f4f4f4;
+  --bg-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #f4f4f4;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --hover-light: #f9f9f9;
+  --hover-dark: #3a3a3a;
+  --icon-bg-dark: #2c2c2c;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: var(--bg-light);
   margin: 0;
   padding: 6px;
-  color: black;
+  color: var(--text-light);
 }
 
 .edu-section {
   max-width: 900px;
   margin: auto;
-  background: #fff;
+  background: var(--card-light);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
 }
 
 .edu-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
-  color: black;
+  color: var(--text-light);
 }
 
 .edu-box {
   display: flex;
   flex-direction: row;
   gap: var(--gap);
-  background: linear-gradient(120deg, var(--color), #ffffff);
+  background: linear-gradient(120deg, var(--color), var(--card-light));
   border-left: 6px solid var(--color);
   padding: 20px;
   border-radius: 10px;
@@ -50,7 +59,7 @@ body {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.6s ease;
-  color: black;
+  color: var(--text-light);
 }
 
 .edu-box.visible {
@@ -61,7 +70,7 @@ body {
 .edu-box:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(120deg, var(--color), #f9f9f9);
+  background: linear-gradient(120deg, var(--color), var(--hover-light));
 }
 
 .icon {
@@ -87,15 +96,15 @@ body {
 
 .info h3 {
   font-size: 1.2rem;
-  color: black;
+  color: var(--text-light);
 }
 
 .info p {
-  color: black;
+  color: var(--text-light);
   margin: 3px 0;
 }
 
-/* 📱 Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .edu-box {
     flex-direction: column;
@@ -128,39 +137,38 @@ body {
   }
 }
 
-/* 🌙 Dark Mode Support */
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background: #121212;
-    color: #f4f4f4;
+    background: var(--bg-dark);
+    color: var(--text-dark);
   }
 
   .edu-section {
-    background: #1e1e1e;
-    color: #f4f4f4;
+    background: var(--card-dark);
+    color: var(--text-dark);
   }
 
   .edu-title {
-    color: #ffffff;
+    color: var(--text-dark);
   }
 
   .edu-box {
-    background: linear-gradient(120deg, var(--color), #2c2c2c);
-    border-left: 6px solid var(--color);
-    color: #fff;
+    background: linear-gradient(120deg, var(--color), var(--card-dark));
+    color: var(--text-dark);
   }
 
   .edu-box:hover {
-    background: linear-gradient(120deg, var(--color), #3a3a3a);
+    background: linear-gradient(120deg, var(--color), var(--hover-dark));
   }
 
   .info h3,
   .info p {
-    color: #ffffff;
+    color: var(--text-dark);
   }
 
   .icon img {
-    background-color: #2c2c2c;
+    background-color: var(--icon-bg-dark);
   }
 }    
   </style></head>
