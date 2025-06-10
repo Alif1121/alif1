@@ -23,9 +23,30 @@
 text-align: justify;
    }
 
-.a{
-font-color: violet;
-}
+
+  /* All normal links */
+  a {
+    color: #1a73e8; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* On hover */
+  a:hover {
+    color: #d93025; /* Red or any color you like */
+    text-decoration: underline;
+  }
+
+  /* Optional: style only links inside #project-summary */
+  #project-summary a {
+    color: #1a73e8;
+  }
+
+  #project-summary a:hover {
+    color: #d93025;
+  }
+
+
 img {
       display: block;
       margin: 20px auto;
@@ -59,24 +80,30 @@ img {
         <p class="header">Creative Developer | Web Explorer | C Programmer</p>
     </div>
 
-
-<section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
-<h1 style="text-align: center;">PROJECT NO. - 01 </h1>
+<section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
+  <h1 style="text-align: center;">PROJECT NO. - 01</h1>
   <h2 style="text-align: center;">🔍 <strong>Project Summary</strong></h2>
 
-<h3>If you interest click here to visit     <a href="voucher.html" alt="project">Project 01</a></h3>
-  <p style="font-size: 1rem; line-height: 1.6; color: #333;;>
+  <h3>If you're interested, click here to visit <a href="voucher.html">Project 01</a></h3>
+  
+  <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+    The Voucher Generator Web App is a simple, fast, and user-friendly tool designed for small businesses and shopkeepers.
+    Built with <b>HTML, CSS, and JavaScript</b>, it enables users to easily create printable vouchers by entering product details
+    like name, quantity, and unit price. The app <b>calculates totals, paid amounts, and dues in real time, reducing manual errors.</b>
+  </p>
 
-The Voucher Generator Web App is a simple, fast, and user-friendly tool designed for small businesses and shopkeepers. Built with <b>HTML, CSS, and JavaScript</b>, it enables users to easily create printable vouchers by entering product details like name, quantity, and unit price. The app <b>calculates totals, paid amounts, and dues in real time, reducing manual errors.</b> </p>
-<br><br>
-<div style="text-align: center; margin: 2rem 0;">
+  <br><br>
+  <div style="text-align: center; margin: 2rem 0;">
     <img src="Picture/voucher02.jpg" alt="Voucher Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
   </div>
-<br><br><p>Users can dynamically add multiple products and print vouchers with one click. Fully responsive and requiring no login, it runs smoothly on both desktop and mobile devices. Hosted on GitHub Pages, it demonstrates practical JavaScript use in form handling and real-time updates.
+
+  <br><br>
+  <p style="font-size: 1rem; line-height: 1.6; color: #333;">
+    Users can dynamically add multiple products and print vouchers with one click. Fully responsive and requiring no login,
+    it runs smoothly on both desktop and mobile devices. Hosted on GitHub Pages, it demonstrates practical JavaScript use
+    in form handling and real-time updates.
   </p>
 </section>
-   
-
 
       <div class="footer">
         <footer>
