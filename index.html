@@ -235,9 +235,12 @@
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
 
-   <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">
-    &#8679;
-  </button>
+  <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">
+  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6" />
+  </svg>
+</button>
 
 <script src="script.js"></script>
 
@@ -263,21 +266,7 @@
   // Start typing animation after 2.5 seconds
   setTimeout(typeWriter, 2500);
 
-  // Show/hide scroll-to-top button on scroll
-  window.onscroll = function () {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Scroll to top when button is clicked
-  function topFunction() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
+  
 
 
 
