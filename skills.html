@@ -4,295 +4,300 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alif's Portfolio - Skills</title>
-  <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f1f1;
+    }
 
- <style>
- .Alif {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 60px;
-  margin: 30px 0;
-}
-
-.skill {
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  margin: 25px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 25px 30px;
-  transition: transform 0.3s ease;
-  flex-wrap: wrap;
-  max-width: 1000px;
-}
-
-.skill:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.skill-icon,
-.skill-photo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: 8px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 60px;
   
-  margin-bottom: 15px;
-}
 
-.skill-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-}
+    .navbar h1 {
+      font-size: 24px;
+    }
 
-.skill-name {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  text-align: center;
-color: black;
+    .menu-icon {
+      font-size: 26px;
+      cursor: pointer;
+      display: none;
+    }
 
-}
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
 
-.skill .text p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 15px;
-  text-align: justify;
-}
+    .hero-content p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
 
-.skill-level {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  color: #555;
-  text-align: center;
-}
+    .Alif {
+      text-align: center;
+      font-size: 45px;
+      margin: 30px 0;
+      color: #222;
+      font-weight: bold;
+    }
 
-.progress-bar {
-  background: #ddd;
-  border-radius: 6px;
-  height: 8px;
-  width: 100%;
-  overflow: hidden;
-}
+    .skills-section {
+      padding: 30px 20px;
+    }
 
-.progress {
-  height: 100%;
-  border-radius: 6px;
-}
+    .skill {
+      background: #2c3e50;
+      color: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      margin: 25px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 25px 30px;
+      transition: 0.3s;
+      flex-wrap: wrap;
+      max-width: 1000px;
+    }
 
-.progress.advanced {
-  background-color: #4caf50;
-}
-.progress.middle {
-  background-color: #2196f3;
-}
-.progress.beginner {
-  background-color: #f44336;
-}
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
 
-.skill-image {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-top: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background: white;
-  align-self: center;
-}
+    .skill-icon,
+    .skill-photo {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: white;
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
 
-/* Responsive Styles (Mobile Friendly) */
-@media (max-width: 768px) {
-  .skill {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 15px;
-  }
+    .skill-content {
+      flex: 1;
+      padding: 0 20px;
+    }
 
-  .skill-icon,
-  .skill-photo {
-    margin: 0 auto 15px auto;
-    display: block;
-  }
+    .skill-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-align: center;
+      color: #fff;
+    }
 
-  .skill-content {
-    align-items: center;
-    text-align: center;
-  }
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
 
-  .text p {
-    font-size: 16px;
-    padding: 0 10px;
-  }
+    .skill-level {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ccc;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
-  .skill-image {
-    width: 90px;
-    height: 90px;
-    margin: 20px auto 0 auto;
-  }
-}
+    .progress-bar {
+      background: #444;
+      border-radius: 6px;
+      height: 8px;
+      width: 100%;
+      overflow: hidden;
+    }
 
+    .progress {
+      height: 100%;
+      border-radius: 6px;
+    }
 
-</style>
+    .progress.advanced {
+      background-color: #27ae60;
+    }
 
+    .progress.middle {
+      background-color: #2980b9;
+    }
+
+    .progress.beginner {
+      background-color: #c0392b;
+    }
+
+    .skill-image {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #444;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .skill {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <nav class="navbar">
     <h1>Skill</h1>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul class="nav-links" id="dropdownMenu"><li><a href="index.html">Home</a></li>
-      <li><a href="edu.html">Education </a>
-      </li>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="edu.html">Education</a></li>
       <li><a href="project.html">Project</a></li>
       <li><a href="skills.html">Skill</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-<!--hero-->
+
   <div class="hero-content">
     <h2><span>ALIF VERSE</span></h2>
-    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+    <p>Creative Developer | Web Explorer | C Programmer</p>
   </div>
 
-
-
-  <section id="Skills" class="skills-section">
-    <h2 class="Alif">My Skill</h2>
+  <section class="skills-section">
+    <h2 class="Alif">My Skills</h2>
 
     <!-- HTML -->
-    <div class="skill">
-      <i class="fab fa-html5 skill-icon" style="color: #e44d26;"></i>
+    <div class="skill" style="background-color: #e44d26;">
+      <i class="fab fa-html5 skill-icon"></i>
       <div class="skill-content">
         <span class="skill-name">HTML</span>
         <div class="text">
-          <p>HTML (Hyper Text Markup Language) is the standard language for creating webpages.
-             It defines the structure of web content using elements like text, images, links, and tables.
-             <br> With knowledge in HTML5, I focus on creating accessible, well-organized web pages that form
-              the backbone of modern web design.</p>
+          <p>HTML is the standard language for creating webpages. I use HTML5 to structure accessible, clean, and semantic web layouts.</p>
         </div>
         <span class="skill-level">Exploring</span>
         <div class="progress-bar">
           <div class="progress advanced" style="width: 80%;"></div>
         </div>
       </div>
-      <img src="Picture/html-structure.jpg" alt="HTML Logo" class="skill-image" />
+      <img src="Picture/html-structure.jpg" alt="HTML" class="skill-image">
     </div>
 
     <!-- CSS -->
-    <div class="skill">
-      <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+    <div class="skill" style="background-color: #264de4;">
+      <i class="fab fa-css3-alt skill-icon"></i>
       <div class="skill-content">
         <span class="skill-name">CSS</span>
         <div class="text">
-          <p>CSS (Cascading Style Sheets) is the language that adds style, color and layout to HTML structures.
-             It turns plain content into beautiful, responsive design.
-             <br> I use CSS to transform raw HTML into visually engaging interfaces using Flexbox, Grid, and animations.</p>
+          <p>CSS styles HTML content. I use Flexbox, Grid, and animations to build responsive layouts and beautiful UI.</p>
         </div>
         <span class="skill-level">Learning</span>
         <div class="progress-bar">
           <div class="progress beginner" style="width: 35%;"></div>
         </div>
       </div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" class="skill-image" />
+ 
+      <img src="css.jpeg" alt="CSS" class="skill-image">
     </div>
 
     <!-- C Language -->
-    <div class="skill">
-      <i class="devicon-c-plain skill-icon" style="color: #00599C;"></i>
+    <div class="skill" style="background-color: #00599C;">
+      <i class="devicon-c-plain skill-icon"></i>
       <div class="skill-content">
         <span class="skill-name">C Language</span>
         <div class="text">
-          <p>C is a powerful, low-level programming language that builds the foundation for understanding 
-            computer architecture and system-level programming. <br>I use C to write efficient, memory-conscious
-             programs and understand how software interacts closely with hardware.</p>
+          <p>C is a foundational programming language. I use it to learn system-level programming and write efficient code.</p>
         </div>
         <span class="skill-level">Progressing</span>
         <div class="progress-bar">
           <div class="progress middle" style="width: 60%;"></div>
         </div>
       </div>
-      <img src="Picture/hello.jpg" alt="C Language Logo" class="skill-image" />
+      <img src="Picture/hello.jpg" alt="C" class="skill-image">
     </div>
 
     <!-- GitHub -->
-    <div class="skill">
-      <img src="Picture/github.png" class="skill-icon" alt="GitHub Icon" />
+    <div class="skill" style="background-color: #171515;">
+      <img src="Picture/github.png" class="skill-icon" alt="GitHub">
       <div class="skill-content">
         <span class="skill-name">GitHub</span>
         <div class="text">
-          <p>GitHub is a web-based platform where programmers can store, share, and collaborate
-            on their code. It is based on a version control system.
-            <br> I am new to GitHub. Currently, I have one repository and this portfolio is my second repository.
-            I plan to do more in the future as I continue learning and building.</p>
+          <p>I use GitHub to store and share code. Currently, I’m learning version control and pushing my projects.</p>
         </div>
         <span class="skill-level">Learning</span>
         <div class="progress-bar">
           <div class="progress beginner" style="width: 25%;"></div>
         </div>
       </div>
-      <img src="Picture/gitHome.jpg" alt="Github home page" class="skill-image" />
+      <img src="Picture/gitHome.jpg" alt="GitHub" class="skill-image">
     </div>
 
     <!-- Canva -->
-    <div class="skill">
-      <img src="Picture/canva.jpg" alt="Canva Logo" class="skill-icon" />
+    <div class="skill" style="background-color: #00c4cc;">
+      <img src="Picture/canva.jpg" alt="Canva" class="skill-icon">
       <div class="skill-content">
         <span class="skill-name">Canva</span>
         <div class="text">
-          <p>Canva is an online graphic design platform used to create posters, presentations, logos, social media posts, and more. 
-          <br> I use Canva to create simple designs for various purposes using its templates and user-friendly interface.</p>
+          <p>Canva is my tool for posters, templates, and social media designs. I use it for presentations and thumbnails.</p>
         </div>
         <span class="skill-level">Progressing</span>
         <div class="progress-bar">
           <div class="progress middle" style="width: 60%;"></div>
         </div>
       </div>
-      <img src="Picture/canva-can.jpg" alt="Canva templates" class="skill-image" />
+      <img src="Picture/canva-can.jpg" alt="Canva" class="skill-image">
     </div>
-
-
   </section>
-<br>
+
   <footer class="footer">
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
 
-<!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top">
-  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M18 15l-6-6-6 6" />
-  </svg>
-</button>
+  <button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.classList.toggle('active');
+    }
 
-
-
-<script src="script.js"></script>
-
-<script>
-/*----- to gle menu -----*/
-
-function toggleMenu() {
-            const menu = document.getElementById('dropdownMenu');
-            menu.classList.toggle('active');
-        }
-</script>
-
+    window.onscroll = function () {
+      document.getElementById('scrollToTopBtn').style.display =
+        window.scrollY > 300 ? 'block' : 'none';
+    };
+  </script>
 </body>
 </html>
