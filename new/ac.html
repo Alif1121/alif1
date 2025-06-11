@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alif Verse</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <style>
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #f0f8ff, #e6f2ff, #ffffff, #d0e7ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0077b6;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Section Card Styles */
+#project-summary {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem;
+  box-shadow: 0 6px 25px rgba(0, 170, 255, 0.1);
+  border-left: 6px solid #00bcd4;
+}
+
+#tech-stack {
+  background: linear-gradient(135deg, #fff3cd, #ffffff);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem;
+  box-shadow: 0 6px 25px rgba(255, 193, 7, 0.15);
+  border-left: 6px solid #ffc107;
+}
+
+#user-benefits {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem;
+  box-shadow: 0 6px 25px rgba(76, 175, 80, 0.12);
+  border-left: 6px solid #4caf50;
+}
+
+/* Headings */
+h2, h3 {
+  color: #0077b6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs and Lists */
+p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Hero section */
+.hero-content {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+.header {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* Project title */
+.voucher {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: cadetblue;
+  margin-top: 10px;
+}
+
+.top {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0077b6;
+}
+
+.tip {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0077b6;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}</style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Project</h1>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="dropdownMenu">
+
+<li><a href="index.html">Home</a></li>
+      <li><a href="edu.html">Education </a>
+      </li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="skills.html">Skill</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2 class="none"><span>ALIF VERSE</span></h2>
+    <p class="header">Creative Developer | Web Explorer | C Programmer</p>
+  </div>
+
+  <div>
+    <p class="top">Project No: 02</p>
+    <p class="tip">Admission Calender</p>
+    
+    <h3 style="color: black;">A program based for Admission Students for Bangladesh.</h3>
+  </div>
+
+<section id="project-summary" style="padding: 0.75rem; background-color: #f9f9f9;">
+  <h2><strong>📅 What is MNR Admission Calendar?</strong></h2>
+  <p>
+    The MNR Admission Calendar is a free, distraction-free online tool designed to help<b> university admission candidates</b> in Bangladesh keep track of their admission tests, deadlines, and preparation materials — all in one place.
+It’s part of the MNR World platform and falls under the <b>MNR Study</b> initiative.
+<br> 
+I have been adding, subtracting, modified various information. Along with this, I have been working in a beautiful way.
+  </p>
+<br>
+<h2><strong>🔍 Core Features<br><br>
+✅ University Admission Test Timeline</strong></h2>
+  <p>
+    Organized calendar of <b>public and private university admission tests </b> in Bangladesh
+Each test date is shown with a<b> countdown timer</b>
+Helps students keep track of what's coming up next. <br>
+
+  </p>
+  <div style="text-align: center; margin: 2rem 0;">
+    <img src ="ac.jpg" alt="Voucher Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+  </div>
+
+  
+</section>
+  </p>
+
+<section id="tech-stack" style="padding: 1rem; background-color: #f4f4f4;">
+  <h2>💻 <strong>Technology Stack</strong></h2>
+  <p>
+    The project is primarily built using <strong>HTML, CSS, JavaScript and Responsive Design</strong>.
+    <br><br>
+    The current site behaves like a static site — there is no visible dynamic backend or user login. However, some data could be fetched or updated periodically.
+    <br> Flutter / React Native	Future extension for mobile users
+
+  </p>
+  
+</section>
+
+<section id="user-benefits" style="padding: 1rem; background-color: #ffffff;">
+  <h2>✅ <strong>User Benefits</strong></h2>
+<p><strong>🔔 Real-Time Updates</strong><br>
+Keeps track of latest changes (e.g., exam date shift, new circulars).<br>
+Designed to serve students in <strong>real-time</strong> without information overload.
+</p><p><strong>🎯 Study-Focused</strong><br>
+Built to <strong>minimize distractions</strong> (unlike Facebook/YouTube).<br>
+Everything is clean, minimal, and focused on what matters for exam preparation.<br>
+In future, there are plans for a <strong>study timeline</strong> feature, to help organize revision.
+</p>
+<p><strong>🛠️ Built-in Systems</strong><br>
+Exam listing (with clickable details)<br>
+Filters 
+<span style="color: gray;">(in future: sort by university, unit, exam type)</span><br>
+Option to add new universities or updates (via contact)
+</p>
+ <br>
+ <br>
+ <p><strong>🌐 How to Access It</strong><br>
+You can access the calendar directly at:<br>
+🔗 <a href="https://mnr.world/ac" target="_blank">https://mnr.world/ac</a>
+</p>
+</section>
+
+<section id="project-summary" style="padding: 2rem; background-color: #f9f9f9;">
+<div style="text-align: center; margin: 2rem 0;">
+    <img src="AC02.jpg" alt="Voucher Image" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 03px;">
+  <h3>🛠️ <strong>Key Features</strong></h3>
+
+  <p><strong>📅 Admission Test Schedule at a Glance:</strong> A well-organized calendar view of <b>upcoming university admission tests (public & private) </b>
+Shows exact exam dates, institutions, and countdown timers</p>
+  <p><strong>📄 Official Circulars & Resources:</strong> Direct links to official university admission circulars
+Attachments or references to: 
+ <b>Syllabus, Seat plan, Previous year question banks, Admit card download link. </b></p>
+ <p><strong>⏱️ Countdown Timer for Each Exam: </strong> 
+Every listed admission test has <b>a live countdown</b> (e.g., “12 days left”)
+Helps students plan and prioritize</p>
+
+<p><strong>📌 Important Exam Details:</strong>  For each university/unit:<br>
+Is <b>negative marking</b> applicable?<br>
+Are <b>calculators allowed?</b><br>
+Is the exam <b>written or MCQ?</b></p>
+
+<p><strong> 🛠️ Simple Tech, Easy Access :</strong>
+Mobile-friendly
+Very lightweight → works well on slow internet
+Can be accessed without logging in</p>
+  </div>
+  </section>
+
+<section id="user-benefits" style="padding: 1rem; background-color: #ffffff;">
+  
+  <p><h2><strong>🎯 Why was it built?</strong></h2><br>
+<em>"Students often waste hours looking for admission info on social media — and still miss details. We built this to solve that."</em><br>
+– <span style="font-style: italic;">From MNR World FAQ</span><br><br>
+The goal is to provide a <strong>centralized</strong>, <strong>clean</strong>, and <strong>useful</strong> place to:
+<ul>
+  <li>Track all admissions</li>
+  <li>Avoid misinformation</li>
+  <li>Prepare efficiently with reliable content</li>
+</ul>
+</p>
+  <h2>🛠️ Built-in Systems</h2>
+  <ul>
+    <li><strong>Exam Listing:</strong> Displays admission exams with clickable details for each university.</li>
+    <li><strong>Filters (Upcoming):</strong> Planned features to sort by:
+      <ul>
+        <li>University</li>
+        <li>Unit (A, B, C, etc.)</li>
+        <li>Exam Type (Written, MCQ, Viva)</li>
+      </ul>
+    </li>
+    <li><strong>Submit New Info:</strong> Users can request to add new universities or update existing info via a contact form or email.</li>
+  </ul>
+
+  </section>
+
+
+
+<script>
+/*----- to gle menu -----*/
+
+function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('active');
+        }
+</script>
+
+
+</body>
+</html>
