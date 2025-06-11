@@ -17,32 +17,6 @@
       background-color: #ffffff;
       color: #111;
     }
-
-    nav.navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: #333;
-      color: #fff;
-    }
-
-    .navbar h1 {
-      font-size: 22px;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
     .menu-icon {
       display: none;
       font-size: 24px;
@@ -269,9 +243,12 @@
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
 
-  <button id="scrollToTopBtn" title="Go to top">
-    ↑
-  </button>
+ <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">
+  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6" />
+  </svg>
+</button>
 
   <script>
     function toggleMenu() {
