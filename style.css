@@ -216,16 +216,6 @@ a.about-glow:hover::after {
 
 /*-------scroll To Btn ----- */
 
-/* Root theme colors */
-:root {
-  --btn-bg-light: rgba(255, 255, 255, 0.6);
-  --btn-bg-dark: rgba(0, 0, 0, 0.4);
-  --btn-color-light: #000;
-  --btn-color-dark: #fff;
-  --btn-shadow-light: rgba(0, 0, 0, 0.2);
-  --btn-shadow-dark: rgba(255, 255, 255, 0.2);
-}
-
 /* Scroll To Top Button */
 #scrollToTopBtn {
 position: fixed;
