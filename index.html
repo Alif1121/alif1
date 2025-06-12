@@ -255,19 +255,6 @@ color: white;
       color: #fff;
     }
 
-    #scrollToTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #444;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 10px;
-      cursor: pointer;
-      display: none;
-      z-index: 100;
-    }
 
     @media (max-width: 768px) {
       .hero-img {
@@ -356,13 +343,11 @@ color: white;
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTopBtn" title="Go to top">
-    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M18 15l-6-6-6 6" />
+<button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
     </svg>
   </button>
-
   <script>
     function toggleMenu() {
       const menu = document.getElementById('dropdownMenu');
