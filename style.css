@@ -216,9 +216,8 @@ a.about-glow:hover::after {
 
 /*-------scroll To Btn ----- */
 
-/* Scroll To Top Button */
 #scrollToTopBtn {
-position: fixed;
+      position: fixed;
       bottom: 30px;
       right: 30px;
       display: none;
@@ -229,8 +228,11 @@ position: fixed;
       padding: 12px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+    }
 
+    #scrollToTopBtn:hover {
+      background-color: #5b21b6;
+    }
 body.light-mode #scrollToTopBtn {
   background: var(--btn-bg-light);
   color: var(--btn-color-light);
