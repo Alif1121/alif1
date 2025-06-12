@@ -525,6 +525,12 @@ function toggleMenu() {
             const menu = document.getElementById('dropdownMenu');
             menu.classList.toggle('active');
         }
+
+
+window.onscroll = function () {
+      document.getElementById('scrollToTopBtn').style.display =
+        window.scrollY > 300 ? 'block' : 'none';
+    };
 </script>
 
 
