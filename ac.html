@@ -34,7 +34,7 @@ a {
 }
 
 .navbar h1 {
-    font-size: 1.8rem;
+    font-size: 26px;
     color: #00dfc0;
     text-align: center;
 }
@@ -242,21 +242,24 @@ a.about-glow:hover::after {
   --btn-shadow-dark: rgba(255, 255, 255, 0.2);
 }
 
-/* Scroll To Top Button */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  cursor: pointer;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  display: none;
-}
+/* Scroll to Top Button */
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
 
+    #scrollToTopBtn:hover {
+      background-color: #5b21b6;
+    }
 body.light-mode #scrollToTopBtn {
   background: var(--btn-bg-light);
   color: var(--btn-color-light);
@@ -511,8 +514,7 @@ The goal is to provide a <strong>centralized</strong>, <strong>clean</strong>, a
   </ul>
 
   </section>
-
-  <button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+<button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
     <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M18 15l-6-6-6 6"/>
     </svg>
