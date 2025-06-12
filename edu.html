@@ -123,7 +123,24 @@
       }
     }
     
-    
+    /* Scroll to Top Button */
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #5b21b6;
+    }
     
   </style></head>
 <body>
@@ -287,10 +304,9 @@ where I completed my pre - primary
 <footer class="footer">
     <p>&copy; 2025 Alif | All rights reserved.</p>
   </footer>
-
-<button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
-    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M18 15l-6-6-6 6"/>
+<button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
     </svg>
   </button>
 
