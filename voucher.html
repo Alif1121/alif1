@@ -8,11 +8,6 @@
 
   <style>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,6 +134,26 @@ a.about-glow:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+
+/* Scroll to Top Button */
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #5b21b6;
+    }
   </style>
 </head>
 <body>
@@ -206,7 +221,7 @@ a.about-glow:hover::after {
  <br>
 
 <p id="access-link"><strong>📎 Project Link</strong>: 
-  <a href="https://alif1121.github.io/shop_project/">Shop Voucher</a>
+<a href="https://alif1121.github.io/shop_project/" target="_blank">Shop Voucher</a>
 </p>
 </section>
 
@@ -235,6 +250,11 @@ a.about-glow:hover::after {
   </p>
 </section>
 
+<button id="scrollToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 <script>
 /*----- to gle menu -----*/
 
