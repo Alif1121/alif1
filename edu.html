@@ -145,23 +145,32 @@
 
 /* Scroll to Top Button */
 #scrollToTopBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      display: none;
-      background-color: #7c3aed;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 12px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 999; /* ensures it's above other elements */
+}
 
-    #scrollToTopBtn:hover {
-      background-color: #5b21b6;
-    }
+#scrollToTopBtn:hover {
+  background-color: #5b21b6;
+  transform: translateY(-4px);
+}
 
+#scrollToTopBtn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
 
   </style></head>
 <body>
